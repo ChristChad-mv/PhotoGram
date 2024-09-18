@@ -1,50 +1,37 @@
-# React + TypeScript + Vite
+# PhotoGram
+It's a web application (a variant of Instagram). 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app allows users to upload photos, delete photos, manages accounts, like others persons photos...
 
-Currently, two official plugins are available:
+In this project, i'll use TypeScript, React.Js, Tailwindcss and Firebase.
+A little definition for each technologies: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## TypeScript 
+It's actually the better version of JavaScript. We can say that TypeScript is a JavaScript typed.
+With it, we can write a robust code with types.
 
-## Expanding the ESLint configuration
+## React.Js
+It's more like a librairie than framework.
+React.js allows simplify the way we write our front end code. 
+It's based on JSX, reusable component, virtual DOM...
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tailwindcss
+It's a CSS Framework that allows us to style our components.
 
-- Configure the top-level `parserOptions` property like this:
+## Firebase
+It's a backend service provided by Google.
+We can easly manage our backend with Firebase with some features like authentification, managing ressources...
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+# Lunch the app
+If you want to lauch the app, you have to use theses commands lines : 
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## npm run dev
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+*Application name:* PhotoGram
+*By :* Christ Chadrak MVOUNGOU
+
+*I created this web app by watching YouTube tutorial from this channel : Dipesh Malvia. The tutorial title is : Learn React, TypeScript & Firebase with project | React Firebase Crash Course in 4 Hours*
+
+Thanks you !!!!
