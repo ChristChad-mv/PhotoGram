@@ -1,13 +1,13 @@
+import * as React from 'react';
+import { RouterProvider } from 'react-router-dom';
+import router from './routes';
 
-function App() {
+interface IAppProps {}
 
+const App: React.FunctionComponent<IAppProps> = (props) => {
   return (
-    <>
-      <p className=" text-2xl">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <RouterProvider router={router} />
+  );
+};
 
-export default App
+export default App;

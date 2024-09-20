@@ -44,7 +44,6 @@ export const router = createBrowserRouter([
     element: <SignUp />, 
     errorElement: <Error />
   },
-   
-])
+]);
 
 export default router;
