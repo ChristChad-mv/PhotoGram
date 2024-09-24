@@ -3,8 +3,8 @@ export interface UserLogIn {
   password: string,
 }
 
-export interface UserSignIn {
+export interface IUserSignIn {
+  name: string, 
   email: string, 
   password: string,
-  confirmPassword: string,  
 }
