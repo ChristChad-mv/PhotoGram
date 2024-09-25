@@ -17,7 +17,7 @@ interface ISignUpProps {
 
 const SignUp: React.FunctionComponent<ISignUpProps> = (props) => {
   const [userInfo, setUserInfo] = React.useState<IUserSignIn>(initialValue)
-  const { googleSignIn, logIn } = useUser();
+  const { googleSignIn, signUp } = useUser();
   const navigate = useNavigate();
 
   const handleEmailInput = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -57,7 +57,7 @@ const SignUp: React.FunctionComponent<ISignUpProps> = (props) => {
     e.preventDefault();
     
     try {
-      const newUser = await logIn(userInfo.email, userInfo.password);
+      const newUser = await signUp(userInfo.email, userInfo.password);
       console.log(newUser.user);
       
       navigate('/login');
