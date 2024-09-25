@@ -4,7 +4,7 @@ import Error from "./pages/Error";
 import Home from "./pages/Home";
 import Profile from "./pages/profile";
 import MyPhotos from "./pages/myPhotos";
-import SignUp from "./pages/SignUp";
+import SignUp from "./pages/SignUp/SignUp";
 import CreatePost from "./pages/Post";
 import ProtectedRoutes from "./components/ProtectedRoutes";
 
