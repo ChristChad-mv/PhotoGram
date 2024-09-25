@@ -15,11 +15,11 @@ type AuthContextData = {
 }
 
 const logIn = (email: string, password: string) => {
-  return createUserWithEmailAndPassword(auth, email, password);
+  return signInWithEmailAndPassword(auth, email, password);
 }
 
 const signUp = (email: string, password: string) => {
-  return signInWithEmailAndPassword(auth, email, password);
+  return createUserWithEmailAndPassword(auth, email, password);
 }
 
 const logOut = () => {
